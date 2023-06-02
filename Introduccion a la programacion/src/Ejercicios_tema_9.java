@@ -1,11 +1,11 @@
 public class Ejercicios_tema_9 {
 
     public static void main(String[] args) {
-        Cliente newCliente=new Cliente(15,"Ramon","+507 6666-6666",12);
-        System.out.println(newCliente);
-
-        Trabajador newTrabajador=new Trabajador(15,"Ramon","+507 6666-6666",12);
-        System.out.println(newTrabajador);
+        Cliente newCliente=new Cliente(15,"Ramon","+507 6666-6666",100.50);
+        System.out.println("Cliente\nNombre: "+newCliente.getNombre()+"\nEdad: "+newCliente.getEdad()+"\nTelefono: "+newCliente.getTelefono()+"\nCreditos: "+newCliente.getCredito()+"$");
+        System.out.println("\n**************************************************************************\n");
+        Trabajador newTrabajador=new Trabajador(25,"Roman","+507 6336-6666",300.25);
+        System.out.println("Trabajador\nNombre: "+newTrabajador.getNombre()+"\nEdad: "+newTrabajador.getEdad()+"\nTelefono: "+newTrabajador.getTelefono()+"\nSalario: "+newTrabajador.getSalario()+"$");
     }
 
 }
@@ -24,30 +24,32 @@ class Person {
         this.telefono=telefono;
     }
 
-    @Override
-    public String toString() {
-        return "Persona{" +", Nombre='" + nombre +
-                "Edad=" + edad + '\'' +
-                ", Teléfono='" + telefono + '\'' +
-                '}';
+    public int getEdad() {
+        return edad;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
 }
 
 //Una vez creada la clase, crea una nueva clase Cliente que herede de Persona,
 // esta nueva clase tendrá la variable credito solo para esa clase.
 class Cliente extends Person{
-    private int credito;
+    private double credito;
     
-    public Cliente(int edad,String nombre, String telefono,int credito){
+    public Cliente(int edad,String nombre, String telefono,double credito){
         super(edad,nombre,telefono);
         this.credito=credito;
     }
 
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "credito=" + credito +" "+
-                  super.toString() +"} ";
+    public double getCredito() {
+        return credito;
     }
 }
 
@@ -61,10 +63,7 @@ class Trabajador extends Person{
         this.salario=salario;
     }
 
-    @Override
-    public String toString() {
-        return "Trabajador{" +
-                "salario=" + salario +" "+
-                super.toString() +"} ";
+    public double getSalario() {
+        return salario;
     }
 }
