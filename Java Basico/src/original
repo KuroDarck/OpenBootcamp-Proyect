@@ -1,0 +1,13 @@
+En Java, los flujos de entrada y salida (input/output streams)
+son esenciales para leer y escribir datos en un programa.
+Los flujos de entrada se utilizan para leer datos de una fuente,
+como un archivo o la entrada estándar, mientras que los flujos de salida
+se utilizan para escribir datos en una fuente, como un archivo o la salida estándar.
+Puedes utilizar las clases InputStream y OutputStream, y sus subclases, para trabajar
+con estos flujos. Por ejemplo, puedes usar FileInputStream para leer datos
+de un archivo y FileOutputStream para escribir datos en un archivo.
+Es importante manejar las excepciones, como IOException, al trabajar con flujos
+de entrada y salida para garantizar un manejo adecuado de los errores.
+En resumen, los flujos de entrada y salida en Java son fundamentales
+para la manipulación de datos en programas y proporcionan una forma flexible
+de interactuar con diferentes fuentes de datos.
