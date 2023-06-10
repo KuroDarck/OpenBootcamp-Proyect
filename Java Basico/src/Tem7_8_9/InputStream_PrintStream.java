@@ -6,8 +6,8 @@ public class InputStream_PrintStream {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        InputStream archivo=new FileInputStream("C:\\Users\\DELL\\OneDrive\\Documentos\\Cursos\\Desarrollo Web\\OpenBootcamp-Proyect\\Java Basico\\src\\original");
-        PrintStream archivo2=new PrintStream("C:\\Users\\DELL\\OneDrive\\Documentos\\Cursos\\Desarrollo Web\\OpenBootcamp-Proyect\\Java Basico\\src\\copia");
+        InputStream archivo=new FileInputStream("C:\\Users\\DELL\\OneDrive\\Documentos\\Cursos\\Desarrollo Web\\OpenBootcamp-Proyect\\Java Basico\\src\\Tem7_8_9\\original");
+        PrintStream archivo2=new PrintStream("C:\\Users\\DELL\\OneDrive\\Documentos\\Cursos\\Desarrollo Web\\OpenBootcamp-Proyect\\Java Basico\\src\\Tem7_8_9\\copia");
         InputStream_y_PrintStream(archivo,archivo2);
 
 
